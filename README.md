@@ -12,3 +12,5 @@
 - \*NEW\* Works with VNDB links and vn codes
 
 ![](https://github.com/hgg2d/hgg2d.github.io/raw/master/Preview.gif)
+
+Note: I am very lazy, stupid, and busy. I likely won't have the time to keep this script supported (All I really wanted was for vndb links to work, anyways). So feel free to fork this and take over anytime, if you'd like. ~ Pinkfag
