@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        DLSite Links+
-// @namespace   Loli-A-Best
+// @namespace   Loli-A-Best-And-Pinks
 // @include     *://boards.4chan.org/vg/thread/*
 // @include     *://boards.4chan.org/h/thread/*
 // @include     *://boards.4chan.org/*/thread/*
@@ -9,16 +9,18 @@
 // @include     *://boards.4channel.org/*/thread/*
 // @include     *://ipfs.io/ipfs/*
 // @include     *://ipfs.infura.io/ipfs/*
-// @version     1.12
+// @version     1.16
+// @updateURL   https://github.com/Pinkfag/hgg2d.github.io/blob/feat/add-compatibility-with-vndb/DLSite%20Links%20Plus.user.js
 // @description Provide links from RJ, RE, VJ, DMM, VG and RG codes as well as providing thumbnails for community distributed files.
 // @icon        data:image/png;base64,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
-// @grant       none
+// @grant       GM_xmlhttpRequest
 // @run-at      document-idle
 // ==/UserScript==
 (() => {
     'use strict'
     const d = document
     const Chan = {
+        VNDBCode: /(?:(?:(?:https?:\/\/)?vndb.org\/)|\b|^)(v\d+)\b(?!\.\d+)/igm,
         DMMCode: /(?:(?:dmm|www|https?)[^>\s]+)?(?:cid=)?(?:d_|DMM)(\d{6})/gi,
         RJCode: /((?:(?:dlsite|www|http|maniax)[^>\s]+)?[rv][jea]a?((\d{3})\d{3})(?:\.html)?)/gi,
         RGBlog: /(http:\/\/\S*b\.dlsite\.net\/(?:rg\d{5}\/)?archives\/\d{3,8}\.html)/gi,
@@ -69,7 +71,7 @@
                 div.innerHTML = ('<div class="hgg2dBox">\n' +
                     ' <h2>Quicklink Script Tutorial</h2>\n' +
                     ' <hr>\n' +
-                    ' <p>This script is designed to make browsing and sharing hentai games more comfy in /hgg*/ threads.</p>\n' +
+                    ' <p>This script is designed to make browsing and sharing hentai games more comfy in /hgg*/ threads. And now VNDB for /vn/ anons too!</p>\n' +
                     ' <p>Syntax: The codes are parsed in the following ways.</p>\n' +
                     ' <table><tbody>\n' +
                     '     <tr>\n' +
@@ -94,6 +96,10 @@
                     '     <tr>\n' +
                     '         <td>DMM Releases:</td>\n' +
                     '         <td><a rel="noreferrer" target="_blank" href="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_107232/" class="lewds">DMM107232</a> and <a rel="noreferrer" target="_blank" href="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_107232/" class="lewds">d_107232</a> and <a rel="noreferrer" target="_blank" href="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_107232/" class="lewds">https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_107232/</a></td>\n' +
+                    '     </tr>\n' +
+                    '     <tr>\n' +
+                    '         <td>VNDB:</td>\n' +
+                    '         <td><a rel="noreferrer" target="_blank" href="https://vndb.org/v17823" class="lewds">v17823</a> and <a rel="noreferrer" target="_blank" href="https://vndb.org/v17823" class="lewds">https://vndb.org/v17823</a>'+
                     '     </tr>\n' +
                     ' </tbody></table>\n' +
                     ' <hr>\n' +
@@ -160,6 +166,18 @@
         createBlog: (el, match) => {
             const anch = Chan.createAnch(match)
             anch.href = match
+            return anch
+        },
+        createVNDB: (el, match, code) => {
+            const anch = Chan.createAnch(match)
+            anch.href = `https://vndb.org/${code}`
+            anch.classList.add('lewds')
+            if (Chan.games.indexOf(code) === -1) {
+                Chan.games.push(code)
+                const node = anch.cloneNode()
+                node.appendChild(d.createTextNode(code))
+                Chan.content.appendChild(node)
+            }
             return anch
         },
         createCirc: (el, match, code) => {
@@ -256,6 +274,13 @@
             } else if (e.target.href.includes('dmm.co')) {
                 const code = e.target.href.split('cid=')[1].substr(0, 8)
                 Chan.prev.src = `https://pics.dmm.co.jp/digital/game/${code}/${code}pr.jpg`
+            } else if (e.target.href.includes('vndb.org')) {
+                GM_xmlhttpRequest({
+                    method: 'GET',
+                    url: e.target.href,
+                    responseType: 'document',
+                    onload: function(resp) { Chan.prev.src = resp.response.querySelector('.imghover img').src }
+                });
             }
             Chan.prev.style.visibility = ''
             Chan.prev.style.top = ((window.innerHeight - rect.top < 420) ? window.innerHeight - 435 : rect.top - 15) + 'px'
@@ -340,6 +365,7 @@
                 parent.normalize()
             })
 
+            Chan.matchText(el, Chan.VNDBCode, Chan.createVNDB)
             Chan.matchText(el, Chan.DMMCode, Chan.createDMM)
             Chan.matchText(el, Chan.RJCode, Chan.createRJ)
             Chan.matchText(el, Chan.RGBlog, Chan.createBlog)
