@@ -1,3 +1,7 @@
+Version 1.17
+= Miscellaneous
+- Merged branch to master and updated the @updateURL to reflect that
+
 Version 1.16
 = Bugfixes
 - VNDB codes no longer match text referring to versions (eg: v1.23)
