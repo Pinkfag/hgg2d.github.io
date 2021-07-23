@@ -1,3 +1,7 @@
+Version 1.18
+= Miscellaneous
+- Added @connect for vndb.org to allow users to avoid the confirmation dialog
+
 Version 1.17
 = Miscellaneous
 - Merged branch to master and updated the @updateURL to reflect that
