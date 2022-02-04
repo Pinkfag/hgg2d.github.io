@@ -1,3 +1,7 @@
+Version 1.19
+= Features
+- vndb links now include character pages
+
 Version 1.18
 = Miscellaneous
 - Added @connect for vndb.org to allow users to avoid the confirmation dialog
